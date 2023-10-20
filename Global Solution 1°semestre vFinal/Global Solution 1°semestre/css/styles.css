@@ -1,0 +1,221 @@
+body{
+    font-family:Poppins;
+    
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #26c58f;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f8e008 0%,
+    #c1cc29 29%,
+    #c3cfc1 67%,
+    #f8e008 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  border-radius: 500px;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+
+.card-body{
+  background-color: #e7e3e336;
+}
+
+
+
+.carousel-inner{
+    max-height: 100px;
+    width: auto;
+    object-fit: cover;
+}
+
+nav.menu-lateral{
+  position:fixed;
+  width: 250px;
+  height: 68%;
+  padding: 0px 0 0px 1%;
+  margin-right: 5%;
+  margin-top: 80px;
+}
+
+ul{
+  height: 100%;
+  list-style-type: none;
+  margin-left: -52px;
+  background-color: #1f7e55;
+  margin-top: 20px;
+  height: 98%;
+  width: 255px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+ul li.item-menu{
+  transition: .2s;
+  transition: background-color 0.5s;
+}
+
+ul li.item-menu:hover{
+  background-color:#26c58f ;
+  height: auto;
+  border-radius: 12px;
+}
+
+ul li.item-menu a{
+  color: white;
+  text-decoration:none;
+  font-size:20px;
+  padding:20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+  margin-left:10px ;
+}
+
+ul li .item-menu a .icon > i{
+  font-size: 40px;
+}
+
+/*Página 01*/
+.card{
+  height: 400px;
+  width: 100%;
+}
+
+.youtube:a{
+  color: #bbb;
+
+}
+.youtube{
+  font-size: 40px;
+  color: rgb(12, 160, 111);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border:5px solid #26c58f;
+  border-radius: 10px;
+}
+
+
+/*Página 02*/
+
+/* Estilização do contêiner principal */
+.scrollspy-example-2 {
+  overflow-y: scroll;
+  height: 400px; /* Defina a altura desejada para o contêiner */
+}
+
+/* Estilização dos itens */
+.scrollspy-example-2 div {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Estilização dos títulos */
+.scrollspy-example-2 h4, .scrollspy-example-2 h5 {
+  color: #333;
+}
+
+/* Estilização dos parágrafos */
+.scrollspy-example-2 p {
+  color: #666;
+}
+
+/*Página 03*/
+
+
+/*Página 04 Cards Flips*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-right: 65px;
+  display: inline-block;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+#flip1{
+  background-image: url(../img/Cards/flipOnu1.png);
+  color: white;
+  background-size: 100%;
+  transform: rotateY(180deg);
+}
+#flip2{
+  background-image: url(../img/Cards/flipOnu2.png);
+  color: white;
+  background-size: 100%;
+  transform: rotateY(180deg);
+}
+#flip3{
+  background-image: url(../img/Cards/flipOnu3.png);
+  color: white;
+  background-size: 100%;
+  transform: rotateY(180deg);
+}
+#flip4{
+  background-image: url(../img/Cards/flipOnu4.png);
+  color: white;
+  background-size: 100%;
+  transform: rotateY(180deg);
+}
